@@ -29,6 +29,7 @@ def results(request,question_id):
     response = 'you`re looking at the result of question_id%s'
     return HttpResponse(response%question_id)
 
+#
 def vote(request,question_id):
     question = get_object_or_404()
     return HttpResponse('you`re voting on question %s'%question_id)
